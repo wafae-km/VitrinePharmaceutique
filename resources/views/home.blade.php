@@ -57,6 +57,11 @@
                               <li class="active"> <a href="index.html">Home</a> </li>
                               <li> <a href="#about">About</a> </li>
                               <li> <a href="#service"> Service</a> </li>
+                              @can('manage-users')
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('admin.users.index') }}">Manage Users</a>
+                        </li>
+                        @endcan
                               @guest
                             @if (Route::has('login'))
                                 <li class="nav-item">
@@ -404,6 +409,10 @@
             <div class="copyright">
                <p>Copyright 2019 All Right Reserved By <a href="https://html.design/">Free html Templates</a></p>
             </div>
+            <main class="py-4 container">
+            @include('partials.alerts')
+            @yield('content')
+        </main>
          </div>
       </footr>
       <!-- end footer -->
