@@ -21,7 +21,7 @@ class ProductController extends Controller
     }
     public function index_cli()
     {
-    $produits=Produit::all();
+    $produits=Product::all();
         return view('anti-covid', ['produits'=>$produits]);
     }
     /**

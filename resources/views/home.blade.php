@@ -21,6 +21,7 @@
       <!-- fevicon -->
       <link rel="icon" href="{{ asset('images/fevicon.png') }}" type="image/gif" />
       <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
       <link rel="stylesheet" href="{{ asset('css/jquery.mCustomScrollbar.min.css') }}">
       <!-- Tweaks for older IEs-->
       <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
