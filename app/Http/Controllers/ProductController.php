@@ -19,7 +19,11 @@ class ProductController extends Controller
         return view('products.index',compact('products'))
             ->with('i', (request()->input('page', 1) - 1) * 5);
     }
-   
+    public function index_cli()
+    {
+    $produits=Produit::all();
+        return view('anti-covid', ['produits'=>$produits]);
+    }
     /**
      * Show the form for creating a new resource.
      *

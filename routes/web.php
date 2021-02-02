@@ -36,4 +36,5 @@ Route::get('/admin/destroy/{id}',  [App\Http\Controllers\Admin\UsersController::
 Route::prefix('admin')->name('admin.')->group(function(){
     Route::resource('/admin/users',App\Http\Controllers\Admin\UsersController::class);
 });
+Route::get('/anti-covid',[App\Http\Controllers\ProduitController::class, 'index_cli']) ;
 

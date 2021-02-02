@@ -111,8 +111,8 @@
                   <img class="first-slide" src="{{ asset('images/banner2.png') }}" alt="First slide">
                   <div class="container">
                      <div class="carousel-caption relative">
-                        <h1>Basic template</h1>
-                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and </p>
+                        <h1>A propos de nous !</h1>
+                        <p>Achetez vos produits de parapharmacie au Maroc sur vitrine.ma. Notre société vous offre le plus grand choix de produits de parapharmacie au Maroc et aux meilleurs prix du marché. Vous pouvez commander vos produits en ligne sur notre site. Pour le paiement, vous avez le choix entre le paiement en espèce à la livraison ou le paiement électronique en utilisant votre carte bancaire. Les livraisons des produits de parapharmacie sur Casablanca, Rabat, Salé, Témara et Kénitra sont opérées par nos propres livreurs. </p>
                         <a  href="#">Read More</a>
                      </div>
                   </div>
@@ -121,18 +121,18 @@
                   <img class="second-slide" src="images/banner2.png" alt="Second slide">
                   <div class="container">
                      <div class="carousel-caption relative">
-                        <h1>Basic template</h1>
-                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and </p>
+                        <h1>Contactez nous !</h1>
+                        <p>Appelez-nous et recevez les conseils de nos docteurs en pharmacie. </p>
                         <a  href="#">Read More</a>
                      </div>
                   </div>
                </div>
                <div class="carousel-item">
-                  <img class="third-slide" src="images/banner2.png" alt="Third slide">
+                  <img class="third-slide" src="images/offre.jpg" alt="Third slide">
                   <div class="container">
                      <div class="carousel-caption relative">
-                        <h1>Basic template</h1>
-                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and </p>
+                        <h1>Beaucoup d'offres speciaux</h1>
+                        <p>Vitrine.ma vous offre des remises exceptionnelles sur une sélection de produits de parapharmacie chaque semaine valable dans la limite du stock.Vous trouverez tous les offres speciaux au dessous de la page. N'hesitez pas de les voir ! </p>
                         <a  href="#">Read More</a>
                      </div>
                   </div>
@@ -189,7 +189,7 @@
                         <img  src="images/1.jpg" class="zoom img-fluid "  alt="">
                         </a>
                         <span class="hoverle">
-                        <a href="images/1.jpg" class="fancybox" rel="ligthbox">Food</a>
+                        <a href="{{url('/anti-covid')}}" class="fancybox" rel="ligthbox">Anti-Covid</a>
                         </span>  
                      </figure>
                   </div>
@@ -213,7 +213,7 @@
                         <img  src="images/3.jpg" class="zoom img-fluid "  alt="">
                         </a>
                         <span class="hoverle">
-                        <a href="images/3.jpg" class="fancybox" rel="ligthbox">Booking</a>
+                        <a href="images/3.jpg" class="fancybox" rel="ligthbox">Beauté et visage</a>
                         </span>
                      </figure>
                   </div>
@@ -225,7 +225,7 @@
                         <img  src="images/4.jpg" class="zoom img-fluid "  alt="">
                         </a>
                         <span class="hoverle">
-                        <a href="images/4.jpg" class="fancybox" rel="ligthbox">Marketing</a>
+                        <a href="images/4.jpg" class="fancybox" rel="ligthbox">Soins solaires</a>
                         </span> 
                      </figure>
                   </div>
@@ -237,7 +237,7 @@
                         <img  src="images/5.jpg" class="zoom img-fluid "  alt="">
                         </a>
                         <span class="hoverle">
-                        <a href="images/5.jpg" class="fancybox" rel="ligthbox">Design</a>
+                        <a href="images/5.jpg" class="fancybox" rel="ligthbox">Maman bébé</a>
                         </span> 
                      </figure>
                   </div>
@@ -249,8 +249,80 @@
                         <img  src="images/6.jpg" class="zoom img-fluid "  alt="">
                         </a>
                         <span class="hoverle">
-                        <a href="images/6.jpg" class="fancybox" rel="ligthbox">Making Food</a>
+                        <a href="images/6.jpg" class="fancybox" rel="ligthbox">Cheveux</a>
                         </span>
+                     </figure>
+                  </div>
+               </div>
+               <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 thumb">
+                  <div class="service-box">
+                     <figure>
+                        <a href="images/5.jpg" class="fancybox" rel="ligthbox">
+                        <img  src="images/5.jpg" class="zoom img-fluid "  alt="">
+                        </a>
+                        <span class="hoverle">
+                        <a href="images/5.jpg" class="fancybox" rel="ligthbox">Maman bébé</a>
+                        </span> 
+                     </figure>
+                  </div>
+               </div>
+               <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 thumb">
+                  <div class="service-box">
+                     <figure>
+                        <a href="images/5.jpg" class="fancybox" rel="ligthbox">
+                        <img  src="images/5.jpg" class="zoom img-fluid "  alt="">
+                        </a>
+                        <span class="hoverle">
+                        <a href="images/5.jpg" class="fancybox" rel="ligthbox">Maman bébé</a>
+                        </span> 
+                     </figure>
+                  </div>
+               </div>
+               <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 thumb">
+                  <div class="service-box">
+                     <figure>
+                        <a href="images/5.jpg" class="fancybox" rel="ligthbox">
+                        <img  src="images/5.jpg" class="zoom img-fluid "  alt="">
+                        </a>
+                        <span class="hoverle">
+                        <a href="images/5.jpg" class="fancybox" rel="ligthbox">Maman bébé</a>
+                        </span> 
+                     </figure>
+                  </div>
+               </div>
+               <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 thumb">
+                  <div class="service-box">
+                     <figure>
+                        <a href="images/5.jpg" class="fancybox" rel="ligthbox">
+                        <img  src="images/5.jpg" class="zoom img-fluid "  alt="">
+                        </a>
+                        <span class="hoverle">
+                        <a href="images/5.jpg" class="fancybox" rel="ligthbox">Maman bébé</a>
+                        </span> 
+                     </figure>
+                  </div>
+               </div>
+               <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 thumb">
+                  <div class="service-box">
+                     <figure>
+                        <a href="images/5.jpg" class="fancybox" rel="ligthbox">
+                        <img  src="images/5.jpg" class="zoom img-fluid "  alt="">
+                        </a>
+                        <span class="hoverle">
+                        <a href="images/5.jpg" class="fancybox" rel="ligthbox">Maman bébé</a>
+                        </span> 
+                     </figure>
+                  </div>
+               </div>
+               <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 thumb">
+                  <div class="service-box">
+                     <figure>
+                        <a href="images/5.jpg" class="fancybox" rel="ligthbox">
+                        <img  src="images/5.jpg" class="zoom img-fluid "  alt="">
+                        </a>
+                        <span class="hoverle">
+                        <a href="images/5.jpg" class="fancybox" rel="ligthbox">Maman bébé</a>
+                        </span> 
                      </figure>
                   </div>
                </div>
@@ -406,11 +478,9 @@
                   </div>
                </div>
             </div>
-         
-            <main class="py-4 container">
-            @include('partials.alerts')
-        
-        </main>
+            <div class="copyright">
+               <p>Copyright 2019 All Right Reserved By <a href="https://html.design/">Free html Templates</a></p>
+            </div>
          </div>
       </footr>
       <!-- end footer -->
