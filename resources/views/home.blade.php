@@ -25,9 +25,7 @@
       <!-- Tweaks for older IEs-->
       <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
-      <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+     
    </head>
    <!-- body -->
    <body class="main-layout">
@@ -45,7 +43,7 @@
                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
                   <div class="full">
                      <div class="center-desk">
-                        <div class="logo"> <a href="index.html">vitrine</a> </div>
+                        <div class="logo"><a href="#">vitrine</a> </div>
                      </div>
                   </div>
                </div>
@@ -56,7 +54,9 @@
                            <ul class="menu-area-main">
                               <li class="active"> <a href="index.html">Home</a> </li>
                               <li> <a href="#about">About</a> </li>
-                              <li> <a href="#service"> Service</a> </li>
+                              @can('manage-users')
+                              <li> <a href="{{ route('products.index') }} ">Manage Products</a> </li>
+                              @endcan
                               @can('manage-users')
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('admin.users.index') }}">Manage Users</a>
@@ -406,12 +406,10 @@
                   </div>
                </div>
             </div>
-            <div class="copyright">
-               <p>Copyright 2019 All Right Reserved By <a href="https://html.design/">Free html Templates</a></p>
-            </div>
+         
             <main class="py-4 container">
             @include('partials.alerts')
-            @yield('content')
+        
         </main>
          </div>
       </footr>

@@ -2,7 +2,10 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
+use App\Http\Controllers\ProductController;
 
+
+Route::resource('/products', ProductController::class);
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -34,4 +37,3 @@ Route::prefix('admin')->name('admin.')->group(function(){
     Route::resource('/admin/users',App\Http\Controllers\Admin\UsersController::class);
 });
 
-//Route must be outside auth.admin middleware

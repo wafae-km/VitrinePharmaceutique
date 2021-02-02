@@ -8,7 +8,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="viewport" content="initial-scale=1, maximum-scale=1">
       <!-- site metas -->
-      <title>Wise</title>
+      <title>Vitrine pharmaceutique</title>
       <meta name="keywords" content="">
       <meta name="description" content="">
       <meta name="author" content="">
@@ -54,9 +54,11 @@
                      <div class="limit-box">
                         <nav class="main-menu">
                            <ul class="menu-area-main">
-                              <li class="active"> <a href="index.html">Home</a> </li>
+                              <li class="active"> <a href="{{ route('home') }}">Home</a> </li>
                               <li> <a href="#about">About</a> </li>
-                              <li> <a href="#service"> Service</a> </li>
+                              @can('manage-users')
+                              <li> <a href="{{ route('products.index') }}">Manage Products</a> </li>
+                              @endcan
                               @can('manage-users')
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('admin.users.index') }}">Manage Users</a>
@@ -151,9 +153,6 @@
                      </div>
                   </div>
                </div>
-            </div>
-            <div class="copyright">
-               <p>Copyright 2019 All Right Reserved By <a href="https://html.design/">Free html Templates</a></p>
             </div>
          </div>
       </footr>
