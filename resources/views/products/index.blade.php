@@ -24,6 +24,7 @@
         <tr>
             <th>No</th>
             <th>Title</th>
+            <th>Price</th>
             <th>Description</th>
             <th width="250px">Action</th>
         </tr>
@@ -31,6 +32,7 @@
         <tr>
             <td>{{ ++$i }}</td>
             <td>{{ $product->title }}</td>
+            <td>{{ $product->price }}</td>
             <td>{{ $product->description }}</td>
             <td>
                 <form action="{{ route('products.destroy',$product->id) }}" method="POST">

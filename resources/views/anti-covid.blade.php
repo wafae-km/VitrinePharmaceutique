@@ -3,7 +3,7 @@
 <div class="container">
   
   <div class="row">
-    <div class="col s12 cards-container">
+    <div class="col-4 cards-container">
       @foreach($produits as $produit)
         <div class="card">
           <div class="card-image">
@@ -21,14 +21,14 @@
       <p>{{ $produit->description }}</p>
       <form  method="POST" action="#">
         @csrf
-        <div class="input-field col">
-          <input type="hidden" id="id" name="id" value="{{ $produit->id }}">
-          <input id="quantity" name="quantity" type="number" value="1" min="1">
-          <label for="quantity">Quantité</label>        
-          <p>
-            <button class="btn waves-effect waves-light" style="width:40%" type="submit" id="addcart"><i class="fas fa-cart-arrow-down"></i> Ajouter au panier
-            </button>
-          </p>    
+        <div class="input-field row">
+          <div class="form-group-row offset-md-1">
+             <input type="hidden" id="id" name="id" value="{{ $produit->id }}">
+              <label for="quantity">Quantité</label>      
+              <input id="quantity" name="quantity" type="number" value="1" min="1">  
+              <button class="btn waves-effect waves-light" style="width:20% right:0px position:absolute" type="submit" id="addcart"><i class="fas fa-cart-arrow-down"></i>
+              </button>
+           </div> 
         </div>    
       </form>
     </div>
