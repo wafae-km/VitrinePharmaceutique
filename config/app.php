@@ -161,6 +161,9 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
+        Gloudemans\ShoppingCart\ShoppingCartServiceProvider::class,
+                // Le service provider du panier
+                App\Providers\BasketServiceProvider::class,
 
         /*
          * Package Service Providers...
@@ -226,6 +229,7 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+        'Cart'=>Gloudemans\ShoppingCart\Facades\Cart::class,
 
     ],
 

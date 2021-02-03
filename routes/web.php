@@ -36,5 +36,10 @@ Route::get('/admin/destroy/{id}',  [App\Http\Controllers\Admin\UsersController::
 Route::prefix('admin')->name('admin.')->group(function(){
     Route::resource('/admin/users',App\Http\Controllers\Admin\UsersController::class);
 });
-Route::get('/anti-covid',[App\Http\Controllers\ProductController::class, 'index_cli']) ;
+// Les routes de gestion du panier
+Route::get('basket',[App\Http\Controllers\BasketController::class,'show'])->name('basket.show');
+Route::post('basket/add/{product}', [App\Http\Controllers\BasketController::class,'add'])->name('basket.add');
+Route::get('basket/remove/{product}', [App\Http\Controllers\BasketController::class,'remove'])->name('basket.remove');
+Route::get('basket/empty', [App\Http\Controllers\BasketController::class,'empty'])->name('basket.empty');
 
+Route::get('/anti-covid',[App\Http\Controllers\ProductController::class,'index_cli']) ;
