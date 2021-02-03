@@ -25,6 +25,7 @@
       <link rel="stylesheet" href="{{ asset('css/jquery.mCustomScrollbar.min.css') }}">
       <!-- Tweaks for older IEs-->
       <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
      
    </head>
@@ -53,12 +54,12 @@
                      <div class="limit-box">
                         <nav class="main-menu">
                            <ul class="menu-area-main">
-                              <li class="active"> <a href="index.html">Home</a> </li>
-                              <li> <a href="#about">About</a> </li>
-                              @can('manage-users')
+                              <li class="active"> <a href="index.html"><i class="fa fa-home"></i>Home</a> </li>
+                              <li> <a href="#about"><i class="fas fa-info-circle"></i>About</a> </li>
+                              @can('manage')
                               <li> <a href="{{ route('products.index') }} ">Manage Products</a> </li>
                               @endcan
-                              @can('manage-users')
+                              @can('manage')
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('admin.users.index') }}">Manage Users</a>
                         </li>

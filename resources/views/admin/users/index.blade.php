@@ -25,13 +25,13 @@
                             <td>{{ implode(', ',$user->roles()->get()->pluck('name')->toArray()) }}</td>
                             <td>
                               <a href="{{ route('admin.users.edit', $user->id) }}" class="float-left">
-                                <button type="button" class="btn btn-primary btn-sm">Edit</button>
+                                <button type="button" class="btn btn-primary btn-sm"><i class="far fa-edit"></i></button>
                               </a>
                              
                               <form action="{{ route('admin.users.destroy', $user->id) }}" method="POST" class="float-left">
                                 @csrf
                                 @method('DELETE')
-                                <button type="submit" class="btn btn-danger btn-sm">Delete <i class="fas fa-trash"></i></button>
+                                <button type="submit" class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></button>
                               </form>
                             </td>
                           </tr>           

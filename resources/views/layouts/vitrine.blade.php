@@ -20,10 +20,13 @@
       <link rel="stylesheet" href="{{ asset('css/responsive.css') }}">
       <!-- fevicon -->
       <link rel="icon" href="{{ asset('images/fevicon.png') }}" type="image/gif" />
+      <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+
       <!-- Scrollbar Custom CSS -->
       <link rel="stylesheet" href="{{ asset('css/jquery.mCustomScrollbar.min.css') }}">
       <!-- Tweaks for older IEs-->
       <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
       <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -54,14 +57,14 @@
                      <div class="limit-box">
                         <nav class="main-menu">
                            <ul class="menu-area-main">
-                              <li class="active"> <a href="{{ route('home') }}">Home</a> </li>
-                              <li> <a href="#about">About</a> </li>
+                              <li class="active"> <a href="{{ route('home') }}"><i class="fa fa-home"></i> Home</a> </li>
+                              <li> <a href="#about"><i class="fas fa-info-circle"></i> About</a> </li>
                               @can('manage-users')
-                              <li> <a href="{{ route('products.index') }}">Manage Products</a> </li>
+                              <li> <a href="{{ route('products.index') }}"><i class="fab fa-product-hunt"></i>Manage Products</a> </li>
                               @endcan
                               @can('manage-users')
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('admin.users.index') }}">Manage Users</a>
+                            <a class="nav-link" href="{{ route('admin.users.index') }}"><i class="fas fa-users-cog"></i> Manage Users</a>
                         </li>
                         @endcan
                       
