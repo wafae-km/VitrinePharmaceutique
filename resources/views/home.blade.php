@@ -110,7 +110,7 @@
          <div id="myCarousel" class="carousel slide banner-main" data-ride="carousel">
             <div class="carousel-inner">
                <div class="carousel-item active">
-                  <img class="first-slide" src="{{ asset('images/banner2.png') }}" alt="First slide">
+                  <img class="first-slide" src="{{ asset('images/offre6.jpg') }}" alt="First slide">
                   <div class="container">
                      <div class="carousel-caption relative">
                         <h1>A propos de nous !</h1>
@@ -120,7 +120,7 @@
                   </div>
                </div>
                <div class="carousel-item">
-                  <img class="second-slide" src="images/banner2.png" alt="Second slide">
+                  <img class="second-slide" src="images/offre10.jpg" alt="Second slide">
                   <div class="container">
                      <div class="carousel-caption relative">
                         <h1>Contactez nous !</h1>
@@ -130,7 +130,7 @@
                   </div>
                </div>
                <div class="carousel-item">
-                  <img class="third-slide" src="images/offre.jpg" alt="Third slide">
+                  <img class="third-slide" src="images/offre11.jpg" alt="Third slide">
                   <div class="container">
                      <div class="carousel-caption relative">
                         <h1>Beaucoup d'offres speciaux</h1>

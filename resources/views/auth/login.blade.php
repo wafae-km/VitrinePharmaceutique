@@ -73,7 +73,7 @@
 					
 					
 					</div>
-                    <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
+                    <input class="input100 form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
                     <div class="text-center p-t-12">
 <label class="form-check-label" for="remember">
     {{ __('Remember Me') }}
