@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d70d460adbfbc621670d7f74b4fd5010",
+    "content-hash": "ca3e2a135bc9bfdfc0cbe848788e509d",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -4986,6 +4986,64 @@
         }
     ],
     "packages-dev": [
+        {
+            "name": "cwccode/laravel-contracts",
+            "version": "v1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/cwccode/laravel-contracts.git",
+                "reference": "5c7b867fec8fa4995b69f04d6204c35ada5ade84"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/cwccode/laravel-contracts/zipball/5c7b867fec8fa4995b69f04d6204c35ada5ade84",
+                "reference": "5c7b867fec8fa4995b69f04d6204c35ada5ade84",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": ">=5.0"
+            },
+            "require-dev": {
+                "roave/security-advisories": "dev-master"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "CwcCode\\LaravelContracts\\LaravelContractsServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "CwcCode\\LaravelContracts\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ben Connor",
+                    "email": "connorwebcon@gmail.com"
+                }
+            ],
+            "description": "A Laravel artisan command to make interfaces",
+            "keywords": [
+                "artisan",
+                "command",
+                "contract",
+                "interface",
+                "laravel",
+                "make"
+            ],
+            "support": {
+                "issues": "https://github.com/cwccode/laravel-contracts/issues",
+                "source": "https://github.com/cwccode/laravel-contracts/tree/v1.0.2"
+            },
+            "time": "2018-08-07T20:31:39+00:00"
+        },
         {
             "name": "doctrine/instantiator",
             "version": "1.4.0",

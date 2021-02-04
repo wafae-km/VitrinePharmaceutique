@@ -35,7 +35,16 @@
                     <span class="login100-form-title">
 						Member Login
 					</span>
-
+<!--utilisateur n’est pas authentifié et qu’il clique sur le bouton « Commander » -->
+  @if(url()->previous() === route('basket.show'))
+    <div class="col s12">
+      <div class="card purple darken-3">
+        <div class="card-content white-text center-align">
+          Vous devez être connecté pour passer une commande, si vous n'avez pas encore de compte vous pouvez en créer un en utilisant le lien sous ce formulaire.
+        </div>
+      </div>
+    </div>
+  @endif
 					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
                   
                                 <input id="email" type="email" class="input100 form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>

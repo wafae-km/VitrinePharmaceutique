@@ -164,6 +164,7 @@ return [
         Gloudemans\ShoppingCart\ShoppingCartServiceProvider::class,
                 // Le service provider du panier
                 App\Providers\BasketServiceProvider::class,
+                App\Providers\RepositoryServiceProvider::class,
 
         /*
          * Package Service Providers...

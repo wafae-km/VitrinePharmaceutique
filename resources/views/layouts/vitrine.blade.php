@@ -80,6 +80,8 @@
                                 <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 underline">Register</a>
                                 </li>
                             @endif
+
+
                         @else
                             <li class="nav-item dropdown">
                             
@@ -170,6 +172,9 @@
       <script src="{{ asset('js/jquery.mCustomScrollbar.concat.min.js') }}"></script> 
       <script src="{{ asset('js/custom.js') }}"></script>
       <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+      <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+ <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+ <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
       <script>
          $(document).ready(function(){
          $(".fancybox").fancybox({

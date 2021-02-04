@@ -55,22 +55,27 @@
 				@endforeach
 				<tr colspan="2" >
 					<td colspan="4" >Total général</td>
-					<td colspan="2">
+					<td colspan="1">
 						<!-- On affiche total général -->
 						<strong>{{ $total }} $</strong>
 					</td>
+					<td colspan="1" ><a class="btn btn-info" href="{{ route('checkout.index') }}" title="continuer achats" style="right:0px position:absolute;">Commander</a></td>
 				</tr>
 			</tbody>
 
 		</table>
+
 	</div>
+	<div class="form-group-row ">
+	    <!-- Lien pour vider le panier -->
+	     <a class="btn btn-danger" href="{{ route('basket.empty') }}" title="Retirer tous les produits du panier" >Vider le panier</a>
+		 <a class="btn btn-default" href="{{ route('home') }}" title="continuer achats" style="margin-left:60% ;"><i class="fas fa-arrow-right"></i> Continuer mes achats</a>
 
-	<!-- Lien pour vider le panier -->
-	<a class="btn btn-danger" href="{{ route('basket.empty') }}" title="Retirer tous les produits du panier" >Vider le panier</a>
-
+    </div>
 	@else
 	<div class="alert alert-info">Aucun produit au panier</div>
 	@endif
 
 </div>
+
 @endsection
