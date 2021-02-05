@@ -27,7 +27,7 @@
       <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
-     
+    
    </head>
    <!-- body -->
    <body class="main-layout">
@@ -149,26 +149,7 @@
          </div>
       </section>
       <!-- about  -->
-      <div id="about" class="about top_layer">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-12">
-                  <div class="titlepage">
-                     <h2>About Informations</h2>
-                     <span>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and </span>
-                  </div>
-               </div>
-            </div>
-            <div class="row">
-               <div class="col-md-12">
-                  <div class="img-box">
-                     <figure><img src="images/about.png" alt="img"/></figure>
-                     <a href="#">read more</a>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
+      
       <!-- end abouts -->
       <!-- service --> 
       <div id="service" class="service">
@@ -191,7 +172,7 @@
                         <img  src="images/1.jpg" class="zoom img-fluid "  alt="">
                         </a>
                         <span class="hoverle">
-                        <a href="{{url('/anti-covid')}}" class="fancybox" rel="ligthbox">Anti-Covid</a>
+                        <a href="{{url('/anti-covid')}}" class="fancybox" rel="ligthbox"style="color:black;font-size:24px">Anti-Covid</a>
                         </span>  
                      </figure>
                   </div>
@@ -203,7 +184,7 @@
                         <img  src="images/2.jpg" class="zoom img-fluid "  alt="">
                         </a>
                         <span class="hoverle">
-                        <a href="images/1.jpg" class="fancybox" rel="ligthbox">Fashion</a>
+                        <a href="images/1.jpg" class="fancybox" rel="ligthbox" style="color:black;font-size:24px">Medicines</a>
                         </span>
                      </figure>
                   </div>
@@ -215,7 +196,7 @@
                         <img  src="images/3.jpg" class="zoom img-fluid "  alt="">
                         </a>
                         <span class="hoverle">
-                        <a href="images/3.jpg" class="fancybox" rel="ligthbox">Beauté et visage</a>
+                        <a href="images/3.jpg" class="fancybox" rel="ligthbox"style="color:black;font-size:24px">Self-Care and Beauty</a>
                         </span>
                      </figure>
                   </div>
@@ -227,7 +208,7 @@
                         <img  src="images/4.jpg" class="zoom img-fluid "  alt="">
                         </a>
                         <span class="hoverle">
-                        <a href="images/4.jpg" class="fancybox" rel="ligthbox">Soins solaires</a>
+                        <a href="images/4.jpg" class="fancybox" rel="ligthbox"style="color:black;font-size:24px">Health and first aids</a>
                         </span> 
                      </figure>
                   </div>
@@ -239,95 +220,24 @@
                         <img  src="images/5.jpg" class="zoom img-fluid "  alt="">
                         </a>
                         <span class="hoverle">
-                        <a href="images/5.jpg" class="fancybox" rel="ligthbox">Maman bébé</a>
+                        <a href="images/5.jpg" class="fancybox" rel="ligthbox" style="color:black;font-size:24px">Mum and baby</a>
                         </span> 
                      </figure>
                   </div>
                </div>
-               <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+               <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 thumb">
                   <div class="service-box">
                      <figure>
                         <a href="images/6.jpg" class="fancybox" rel="ligthbox">
                         <img  src="images/6.jpg" class="zoom img-fluid "  alt="">
                         </a>
                         <span class="hoverle">
-                        <a href="images/6.jpg" class="fancybox" rel="ligthbox">Cheveux</a>
+                        <a href="images/6.jpg" class="fancybox" rel="ligthbox"style="color:black;font-size:24px" >Vitamins</a>
                         </span>
                      </figure>
                   </div>
                </div>
-               <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 thumb">
-                  <div class="service-box">
-                     <figure>
-                        <a href="images/5.jpg" class="fancybox" rel="ligthbox">
-                        <img  src="images/5.jpg" class="zoom img-fluid "  alt="">
-                        </a>
-                        <span class="hoverle">
-                        <a href="images/5.jpg" class="fancybox" rel="ligthbox">Maman bébé</a>
-                        </span> 
-                     </figure>
-                  </div>
-               </div>
-               <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 thumb">
-                  <div class="service-box">
-                     <figure>
-                        <a href="images/5.jpg" class="fancybox" rel="ligthbox">
-                        <img  src="images/5.jpg" class="zoom img-fluid "  alt="">
-                        </a>
-                        <span class="hoverle">
-                        <a href="images/5.jpg" class="fancybox" rel="ligthbox">Maman bébé</a>
-                        </span> 
-                     </figure>
-                  </div>
-               </div>
-               <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 thumb">
-                  <div class="service-box">
-                     <figure>
-                        <a href="images/5.jpg" class="fancybox" rel="ligthbox">
-                        <img  src="images/5.jpg" class="zoom img-fluid "  alt="">
-                        </a>
-                        <span class="hoverle">
-                        <a href="images/5.jpg" class="fancybox" rel="ligthbox">Maman bébé</a>
-                        </span> 
-                     </figure>
-                  </div>
-               </div>
-               <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 thumb">
-                  <div class="service-box">
-                     <figure>
-                        <a href="images/5.jpg" class="fancybox" rel="ligthbox">
-                        <img  src="images/5.jpg" class="zoom img-fluid "  alt="">
-                        </a>
-                        <span class="hoverle">
-                        <a href="images/5.jpg" class="fancybox" rel="ligthbox">Maman bébé</a>
-                        </span> 
-                     </figure>
-                  </div>
-               </div>
-               <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 thumb">
-                  <div class="service-box">
-                     <figure>
-                        <a href="images/5.jpg" class="fancybox" rel="ligthbox">
-                        <img  src="images/5.jpg" class="zoom img-fluid "  alt="">
-                        </a>
-                        <span class="hoverle">
-                        <a href="images/5.jpg" class="fancybox" rel="ligthbox">Maman bébé</a>
-                        </span> 
-                     </figure>
-                  </div>
-               </div>
-               <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 thumb">
-                  <div class="service-box">
-                     <figure>
-                        <a href="images/5.jpg" class="fancybox" rel="ligthbox">
-                        <img  src="images/5.jpg" class="zoom img-fluid "  alt="">
-                        </a>
-                        <span class="hoverle">
-                        <a href="images/5.jpg" class="fancybox" rel="ligthbox">Maman bébé</a>
-                        </span> 
-                     </figure>
-                  </div>
-               </div>
+        
             </div>
          </div>
       </div>
@@ -436,5 +346,6 @@
          });
          
       </script> 
+ 
    </body>
 </html>
