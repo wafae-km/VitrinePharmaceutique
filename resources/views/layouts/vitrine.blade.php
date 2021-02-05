@@ -8,7 +8,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="viewport" content="initial-scale=1, maximum-scale=1">
       <!-- site metas -->
-      <title>Vitrine pharmaceutique</title>
+      <title>vitrine_pharmaceutique</title>
       <meta name="keywords" content="">
       <meta name="description" content="">
       <meta name="author" content="">
@@ -20,17 +20,14 @@
       <link rel="stylesheet" href="{{ asset('css/responsive.css') }}">
       <!-- fevicon -->
       <link rel="icon" href="{{ asset('images/fevicon.png') }}" type="image/gif" />
-      <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
-
       <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
       <link rel="stylesheet" href="{{ asset('css/jquery.mCustomScrollbar.min.css') }}">
       <!-- Tweaks for older IEs-->
       <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
-      <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+     
    </head>
    <!-- body -->
    <body class="main-layout">
@@ -41,30 +38,30 @@
       <!-- end loader --> 
       <!-- header -->
       <header>
-        <!-- header inner -->
-        <div class="header">
+         <!-- header inner -->
+         <div class="header">
          <div class="container">
             <div class="row">
-               <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+               <div class="col-xl-3 col-lg-2 col-md-2 col-sm-3 col logo_section">
                   <div class="full">
                      <div class="center-desk">
-                        <div class="logo"> <a href="index.html">vitrine</a> </div>
+                        <div class="logo" style="margin-left:0%"><a href="#"><i class="fas fa-first-aid"></i>  vitrine </a> </div>
                      </div>
                   </div>
                </div>
-               <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+               <div class="col-xl-12 col-lg-12 col-md-9 col-sm-9">
                   <div class="menu-area">
                      <div class="limit-box">
                         <nav class="main-menu">
                            <ul class="menu-area-main">
-                              <li class="active"> <a href="{{ route('home') }}"><i class="fa fa-home"></i> Home</a> </li>
+                              <li > <a href="{{ route('home') }}"><i class="fa fa-home"></i> Home</a> </li>
                               <li> <a href="#about"><i class="fas fa-info-circle"></i> About</a> </li>
-                              @can('manage-users')
-                              <li> <a href="{{ route('products.index') }}"><i class="fab fa-product-hunt"></i>Manage Products</a> </li>
+                              @can('manage')
+                              <li> <a href="{{ route('products.index') }} "> Manage Products</a> </li>
                               @endcan
-                              @can('manage-users')
+                              @can('manage')
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('admin.users.index') }}"><i class="fas fa-users-cog"></i> Manage Users</a>
+                            <a class="nav-link" href="{{ route('admin.users.index') }}"> Manage Users</a>
                         </li>
                         @endcan
                       

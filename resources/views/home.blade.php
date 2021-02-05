@@ -54,26 +54,26 @@
                      <div class="limit-box">
                         <nav class="main-menu">
                            <ul class="menu-area-main">
-                              <li class="active"> <a href="index.html"><i class="fa fa-home"></i>Home</a> </li>
-                              <li> <a href="#about"><i class="fas fa-info-circle"></i>About</a> </li>
+                              <li > <a href="{{ route('home') }}"><i class="fa fa-home"></i> Home</a> </li>
+                              <li> <a href="#about"><i class="fas fa-info-circle"></i> About</a> </li>
                               @can('manage')
-                              <li> <a href="{{ route('products.index') }} ">Manage Products</a> </li>
+                              <li> <a href="{{ route('products.index') }} "> Manage Products</a> </li>
                               @endcan
                               @can('manage')
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('admin.users.index') }}">Manage Users</a>
+                            <a class="nav-link" href="{{ route('admin.users.index') }}"> Manage Users</a>
                         </li>
                         @endcan
                               @guest
                             @if (Route::has('login'))
                                 <li class="nav-item">
-                                <a href="{{ route('login') }}" class="text-sm text-gray-700 underline">Login</a>
+                                <a href="{{ route('login') }}" class="text-sm text-gray-700 underline"><i class="fas fa-share"></i> Login</a>
                                 </li>
                             @endif
                             
                             @if (Route::has('register'))
                                 <li class="nav-item">
-                                <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 underline">Register</a>
+                                <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 underline"><i class="fas fa-plus"></i> Register</a>
                                 </li>
                             @endif
                         @else
@@ -123,9 +123,9 @@
                   <img class="second-slide" src="images/offre10.jpg" alt="Second slide">
                   <div class="container">
                      <div class="carousel-caption relative">
-                        <h1>Contactez nous !</h1>
-                        <p>Appelez-nous et recevez les conseils de nos docteurs en pharmacie. </p>
-                        <a  href="#">Read More</a>
+                        <h1 style="color:black" >Contactez nous !</h1>
+                        <p style="color:black" >Appelez-nous et recevez les conseils de nos docteurs en pharmacie. </p>
+                        <a style="color:black"  href="#">Read More</a>
                      </div>
                   </div>
                </div>
@@ -133,9 +133,9 @@
                   <img class="third-slide" src="images/offre11.jpg" alt="Third slide">
                   <div class="container">
                      <div class="carousel-caption relative">
-                        <h1>Beaucoup d'offres speciaux</h1>
-                        <p>Vitrine.ma vous offre des remises exceptionnelles sur une sélection de produits de parapharmacie chaque semaine valable dans la limite du stock.Vous trouverez tous les offres speciaux au dessous de la page. N'hesitez pas de les voir ! </p>
-                        <a  href="#">Read More</a>
+                        <h1 style="color:black" >Beaucoup d'offres speciaux</h1>
+                        <p style="color:black" >Vitrine.ma vous offre des remises exceptionnelles sur une sélection de produits de parapharmacie chaque semaine valable dans la limite du stock.Vous trouverez tous les offres speciaux au dessous de la page. N'hesitez pas de les voir ! </p>
+                        <a style="color:black"  href="#">Read More</a>
                      </div>
                   </div>
                </div>
@@ -176,7 +176,7 @@
             <div class="row">
                <div class="col-md-12">
                   <div class="titlepage">
-                     <h2>Services </h2>
+                     <h2>Categories</h2>
                      <span>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of <br>using Lorem Ipsum is that it has a more-or-less normal distribution of letters,</span>
                   </div>
                </div>
