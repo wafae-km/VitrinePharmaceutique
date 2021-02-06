@@ -5,10 +5,10 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Contracts\OrderContract;
 use App\Http\Controllers\Controller;
+use App\Http\Controllers\CartController;
 use App\Repositories\OrderRepository;
 use App\Models\Order;
-use Cart;
-
+use Gloudemans\Shoppingcart\Facades\Cart;
 
 class CheckoutController extends Controller
 {
@@ -19,11 +19,16 @@ class CheckoutController extends Controller
         $this->orderRepository = $orderRepository;
     }
 
-    public function getCheckout()
+    public function getCheckout(Request $request)
 
     {
         $orders= Order::all();
-        return view('checkout',['orders'=>$orders]);
+        $total = $request->get('total');
+        return view('checkout',['orders'=>$orders ,'total'=>$total]);
+    }
+    public function store(Request $request)
+    {
+        
     }
 
     public function placeOrder(Request $request)

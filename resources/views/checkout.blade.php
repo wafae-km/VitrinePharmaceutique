@@ -27,7 +27,7 @@
                                 <div class="form-row">
                                     <div class="col form-group">
                                         <label>First name</label>
-                                        <input type="text" class="form-control" name="first_name">
+                                        <input value="{{ auth()->user()->name }}" disabledtype="text" class="form-control" name="first_name">
                                     </div>
                                     <div class="col form-group">
                                         <label>Last name</label>
@@ -80,17 +80,10 @@
                                     <article class="card-body">
                                         <dl class="dlist-align">
                                             <dt>Total cost: </dt>
-                                           <!-- Initialisation du total général à 0 -->
-			                             	@php $total = 0 @endphp
 
-                                         <!-- On parcourt les produits du panier en session : session('basket') -->
-                                           @foreach ($orders as $key => $item)
-
-                                         <!-- On incrémente le total général par le total de chaque produit du panier -->
-                                         @php $total = $item['grand_total']  @endphp
-                                         @endforeach
-                                            <dd class="text-right h5 b"> {{ config('settings.currency_symbol') }}{{ $total }} </dd>
-                                        </dl>
+                                         <!-- On parcourt les produits du panier en session : session('basket') -->         
+                                            <dd class="text-right h5 b" >{{  $total}}</dd>
+                                    </dl>
                                     </article>
                                 </div>
                             </div>

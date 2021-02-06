@@ -44,6 +44,6 @@ Route::get('basket/empty', [App\Http\Controllers\BasketController::class,'empty'
 
 Route::get('/anti-covid',[App\Http\Controllers\ProductController::class,'index_cli']) ;
 Route::group(['middleware' => ['auth']], function () {
-    Route::get('/checkout', [App\Http\Controllers\CheckoutController::class,'getCheckout'])->name('checkout.index');
+    Route::post('/checkout', [App\Http\Controllers\CheckoutController::class,'getCheckout'])->name('checkout.index');
     Route::post('/checkout/order', [App\Http\Controllers\CheckoutController::class,'placeOrder'])->name('checkout.place.order');
 });

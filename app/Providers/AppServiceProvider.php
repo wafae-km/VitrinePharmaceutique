@@ -16,7 +16,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-//
+        $this->app->bind(\App\Contracts\OrderContract::class, \App\Repositories\OrderRepository::class);
     }
 
     /**

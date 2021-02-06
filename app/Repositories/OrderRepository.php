@@ -7,7 +7,6 @@ use App\Models\OrderItem;
 use App\Contracts\OrderContract;
 use Cart;
 
-
 class OrderRepository implements OrderContract
 {
     protected $model;

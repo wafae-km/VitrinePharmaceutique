@@ -16,7 +16,7 @@ class RepositoryServiceProvider extends ServiceProvider
     ];
     public function register()
     {
-        $this->app->bind(OrderContract::class,OrderRepository::class);
+        $this->app->bind(App\Contracts\OrderContract::class,App\Repositories\OrderRepository::class);
 
 
     }

@@ -53,14 +53,18 @@
 						</td>
 					</tr>
 				@endforeach
+				<form method="POST" action="{{ route('checkout.index') }}" class="form-inline d-inline-block" >
+				{{ csrf_field() }}
 				<tr colspan="2" >
 					<td colspan="4" >Total général</td>
-					<td colspan="1">
+					<td colspan="1"  >
 						<!-- On affiche total général -->
-						<strong>{{ $total }} $</strong>
+						<input value="{{ $total}}"  name="total" type="text" class="form-control"  placeholder="total...">
 					</td>
-					<td colspan="1" ><a class="btn btn-info" href="{{ route('checkout.index') }}" title="continuer achats" style="right:0px position:absolute;">Commander</a></td>
+					<td>      <button type="submit" style="margin-top:30px; border-raduis:30%" class="btn btn-warning">Commander</button>
+</td>
 				</tr>
+				</form>
 			</tbody>
 
 		</table>
