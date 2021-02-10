@@ -12,7 +12,6 @@
         </div>
     </div>
 </div>
-   
 @if ($errors->any())
     <div class="alert alert-danger">
         <strong>Warning!</strong> Please check your input code<br><br>
@@ -24,7 +23,8 @@
     </div>
 @endif
    
-<form action="{{ route('products.store') }}" method="POST">
+<form form enctype="multipart/form-data" action="{{ route('products.store') }}" method="POST">
+
     @csrf
      <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12">
@@ -34,9 +34,29 @@
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
+        <div class="form-group">
+        <input type="file" name="file_path" required class="form-control" >
+    </div>
+    </div>
+        <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>Price:</strong>
                 <input type="text" name="price" class="form-control" placeholder="Price">
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+            <label  for="category">Category:</label>
+            <select name="category" class="custom-select mr-sm-2" id="category">
+                <option value="" >Choisir...</option>
+                <option name="category">Anti-Covid</option>
+                <option name="category">Medecines</option>
+                <option name="category">Self-Care and Beauty</option>
+                <option name="category">Health and first aids</option>
+                <option name="category">Mum and baby</option>
+                <option name="category">Vitamins</option>
+      
+            </select> 
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">

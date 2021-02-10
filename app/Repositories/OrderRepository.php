@@ -21,8 +21,8 @@ class OrderRepository implements OrderContract
             'order_number'      =>  'ORD-'.strtoupper(uniqid()),
             'user_id'           => auth()->user()->id,
             'status'            =>  'pending',
-            'grand_total'       =>  Cart::getSubTotal(),
-            'item_count'        =>  Cart::getTotalQuantity(),
+            'grand_total'       =>  Cart::subTotal(),
+            'item_count'        =>  Cart::priceTotal(),
             'payment_status'    =>  0,
             'payment_method'    =>  null,
             'first_name'        =>  $params['first_name'],
@@ -37,7 +37,7 @@ class OrderRepository implements OrderContract
     
         if ($order) {
     
-            $items = Cart::getContent();
+            $items = Cart::content();
     
             foreach ($items as $item)
             {

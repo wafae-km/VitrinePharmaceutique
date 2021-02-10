@@ -35,8 +35,10 @@ class CheckoutController extends Controller
     {
         // Before storing the order we should implement the
         // request validation which I leave it to you
+        $orders= Order::all();
         $order = $this->orderRepository->storeOrderDetails($request->all());
 
-        dd($order);
-    }
+       return view('account-orders',['orders'=>$orders ,'order'=>$order]);
+    
+}
 }

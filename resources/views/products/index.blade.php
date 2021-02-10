@@ -23,16 +23,22 @@
     <table class="table table-bordered">
         <tr>
             <th>No</th>
+            <th>Picture</th>
+
             <th>Title</th>
             <th>Price</th>
+            <th>Category</th>
             <th>Description</th>
             <th width="250px">Action</th>
         </tr>
         @foreach ($products as $product)
         <tr>
             <td>{{ ++$i }}</td>
+            <td><img style="width:300px;height:150px" src="{{ asset('/storage/product/'. $product->file_path ) }}" alt="First slide">
+</td>
             <td>{{ $product->title }}</td>
             <td>{{ $product->price }}</td>
+            <td>{{ $product->category }}</td>
             <td>{{ $product->description }}</td>
             <td>
                 <form action="{{ route('products.destroy',$product->id) }}" method="POST">

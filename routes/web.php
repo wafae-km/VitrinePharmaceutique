@@ -43,7 +43,17 @@ Route::get('basket/remove/{product}', [App\Http\Controllers\BasketController::cl
 Route::get('basket/empty', [App\Http\Controllers\BasketController::class,'empty'])->name('basket.empty');
 
 Route::get('/anti-covid',[App\Http\Controllers\ProductController::class,'index_cli']) ;
+Route::get('/medecines',[App\Http\Controllers\ProductController::class,'index_cli1']) ;
+Route::get('/selfcare',[App\Http\Controllers\ProductController::class,'index_cli2']) ;
+Route::get('/health',[App\Http\Controllers\ProductController::class,'index_cli3']) ;
+Route::get('/mombaby',[App\Http\Controllers\ProductController::class,'index_cli4']) ;
+Route::get('/vitamins',[App\Http\Controllers\ProductController::class,'index_cli5']) ;
+
+Route::post('/cart',[App\Http\Controllers\CartController::class,'getCart']) ;
+
 Route::group(['middleware' => ['auth']], function () {
     Route::post('/checkout', [App\Http\Controllers\CheckoutController::class,'getCheckout'])->name('checkout.index');
     Route::post('/checkout/order', [App\Http\Controllers\CheckoutController::class,'placeOrder'])->name('checkout.place.order');
 });
+Route::get('checkout/payment/complete', 'CheckoutController@complete')->name('checkout.payment.complete');
+Route::get('account/orders', 'AccountController@getOrders')->name('account.orders');

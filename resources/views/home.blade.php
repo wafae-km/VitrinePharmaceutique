@@ -172,7 +172,7 @@
                         <img  src="images/1.jpg" class="zoom img-fluid "  alt="">
                         </a>
                         <span class="hoverle">
-                        <a href="{{url('/anti-covid')}}" class="fancybox" rel="ligthbox"style="color:black;font-size:24px">Anti-Covid</a>
+                        <a href="{{url('/anti-covid')}}" class="fancybox" rel="ligthbox"id="category"style="color:black;font-size:24px">Anti-Covid</a>
                         </span>  
                      </figure>
                   </div>
@@ -184,7 +184,7 @@
                         <img  src="images/2.jpg" class="zoom img-fluid "  alt="">
                         </a>
                         <span class="hoverle">
-                        <a href="images/1.jpg" class="fancybox" rel="ligthbox" style="color:black;font-size:24px">Medicines</a>
+                        <a href="{{url('/medecines')}}" class="fancybox" rel="ligthbox" style="color:black;font-size:24px">Medicines</a>
                         </span>
                      </figure>
                   </div>
@@ -196,7 +196,7 @@
                         <img  src="images/3.jpg" class="zoom img-fluid "  alt="">
                         </a>
                         <span class="hoverle">
-                        <a href="images/3.jpg" class="fancybox" rel="ligthbox"style="color:black;font-size:24px">Self-Care and Beauty</a>
+                        <a href="{{url('/selfcare')}}" class="fancybox" rel="ligthbox"style="color:black;font-size:24px">Self-Care and Beauty</a>
                         </span>
                      </figure>
                   </div>
@@ -208,7 +208,7 @@
                         <img  src="images/4.jpg" class="zoom img-fluid "  alt="">
                         </a>
                         <span class="hoverle">
-                        <a href="images/4.jpg" class="fancybox" rel="ligthbox"style="color:black;font-size:24px">Health and first aids</a>
+                        <a href="{{url('/health')}}" class="fancybox" rel="ligthbox"style="color:black;font-size:24px">Health and first aids</a>
                         </span> 
                      </figure>
                   </div>
@@ -220,7 +220,7 @@
                         <img  src="images/5.jpg" class="zoom img-fluid "  alt="">
                         </a>
                         <span class="hoverle">
-                        <a href="images/5.jpg" class="fancybox" rel="ligthbox" style="color:black;font-size:24px">Mum and baby</a>
+                        <a href="{{url('/mombaby')}}" class="fancybox" rel="ligthbox" style="color:black;font-size:24px">Mum and baby</a>
                         </span> 
                      </figure>
                   </div>
@@ -232,7 +232,7 @@
                         <img  src="images/6.jpg" class="zoom img-fluid "  alt="">
                         </a>
                         <span class="hoverle">
-                        <a href="images/6.jpg" class="fancybox" rel="ligthbox"style="color:black;font-size:24px" >Vitamins</a>
+                        <a href="{{url('/vitamins')}}" class="fancybox" rel="ligthbox"style="color:black;font-size:24px" >Vitamins</a>
                         </span>
                      </figure>
                   </div>
@@ -249,7 +249,9 @@
                <div class="col-md-12">
                   <div class="titlepage">
                      <h2>RECENT Products</h2>
-                     <span>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of <br>using Lorem Ipsum is that it has a more-or-less normal distribution of letters,</span>
+                     <span>Every Wednesday Pharmacy Vitrine showcases a selection of health, beauty and new products for pharmacy within the newsletter.
+
+Suppliers interested in promoting their products in this feature can email vitrine@pharmacy.gmail.com.</span>
                   </div>
                </div>
             </div>
